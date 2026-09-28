@@ -1,0 +1,23 @@
+CARPETA ASSETS
+==============
+
+PORTADA (tu foto principal)
+----------------------------
+No hace falta editar ningún código.
+
+Solo copiá tu foto acá adentro y ponele de nombre exactamente:
+
+    portada.jpg
+
+(si tu foto es PNG, llamala portada.png; si es WEBP, portada.webp;
+si querés poner un video en vez de foto, portada.mp4)
+
+La página busca sola ese archivo y lo muestra como portada. Si no
+encuentra ninguno, se ve la imagen de ejemplo (placeholder.svg).
+
+Cómo renombrar un archivo:
+- Windows: clic derecho sobre el archivo → "Cambiar nombre"
+- Mac: clic en el archivo, apretar Enter, escribir el nuevo nombre
+
+Importante: el nombre va todo en minúscula, sin espacios ni tildes,
+exactamente "portada" seguido del punto y la extensión (jpg, png, webp o mp4).

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Catálogo</title>
+<meta name="description" content="Catálogo de contenido y consultas.">
+
+<!-- Tipografías: Cormorant Garamond (display/nombre) + Manrope (texto general) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="brand" id="brand-name">Nombre</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#info" class="nav-link">Info</a>
+      <a href="#sexting" class="nav-link">Sexting</a>
+      <a href="#novia" class="nav-link">Novia Virtual</a>
+      <a href="#rates" class="nav-link">Rates</a>
+      <a href="#personalizados" class="nav-link">Personalizados</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#packs" class="nav-link">Packs</a>
+      <a href="#fetiches" class="nav-link">Fetiches</a>
+      <a href="#consultas" class="nav-link nav-cta">Consultas</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO / PORTADA ============ -->
+<!-- La imagen/video y el nombre se cargan desde script.js (CATALOG.perfil) -->
+<section class="hero" id="hero">
+  <div class="hero-media" id="heroMedia" aria-hidden="true"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow" id="heroTagline">Frase corta</p>
+    <h1 class="hero-name" id="heroName">Nombre</h1>
+    <a href="#info" class="btn btn-primary hero-cta">Ver menú</a>
+  </div>
+</section>
+
+<main>
+
+  <!-- ============ INFO ============ -->
+  <section class="section" id="info">
+    <div class="section-inner section-inner-narrow">
+      <h2 class="section-title">Info</h2>
+      <p class="section-text" id="infoIntro"></p>
+
+      <h3 class="subsection-title">Medios de pago</h3>
+      <ul class="plain-list" id="infoPagos"></ul>
+
+      <ul class="plain-list plain-list-notes" id="infoNotas"></ul>
+
+      <div class="info-actions">
+        <a href="#" class="btn btn-outline" id="infoOnlyfansBtn" target="_blank" rel="noopener">Ver mi OnlyFans</a>
+        <a href="#" class="btn btn-primary" id="infoTelegramBtn" target="_blank" rel="noopener">Escribir por Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEXTING ============ -->
+  <section class="section section-alt" id="sexting">
+    <div class="section-inner">
+      <h2 class="section-title">Sexting</h2>
+      <p class="section-sub">Elegí la duración que quieras y consultame disponibilidad.</p>
+      <div class="card-grid" id="sextingGrid"></div>
+
+      <h3 class="subsection-title">Extras</h3>
+      <div class="card-grid" id="extrasGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ NOVIA VIRTUAL ============ -->
+  <section class="section" id="novia">
+    <div class="section-inner">
+      <h2 class="section-title">Novia Virtual</h2>
+      <p class="section-sub" id="noviaDescripcion"></p>
+      <div class="card-grid" id="noviaGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ RATES ============ -->
+  <section class="section section-alt" id="rates">
+    <div class="section-inner">
+      <h2 class="section-title">Rates</h2>
+      <p class="section-sub">Valoraciones personalizadas, escritas o en audio.</p>
+      <div class="card-grid" id="ratesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ PERSONALIZADOS ============ -->
+  <section class="section" id="personalizados">
+    <div class="section-inner">
+      <h2 class="section-title">Personalizados</h2>
+      <p class="section-sub">¿Buscás algo específico? Consultame y vemos las opciones disponibles.</p>
+
+      <h3 class="subsection-title">Videos personalizados</h3>
+      <div class="card-grid" id="videosPersonalizadosGrid"></div>
+
+      <h3 class="subsection-title">Otros pedidos</h3>
+      <div class="card-grid" id="otrosPedidosGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <!-- Sección sin fotos: solo texto y categorías, a pedido. -->
+  <section class="section section-alt" id="galeria">
+    <div class="section-inner section-inner-narrow">
+      <h2 class="section-title">Galería</h2>
+      <p class="section-text" id="galeriaDescripcion"></p>
+      <div class="tag-list" id="galeriaCategorias"></div>
+      <div class="info-actions">
+        <a href="#" class="btn btn-outline" id="galeriaBtn">Consultar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PACKS ============ -->
+  <section class="section" id="packs">
+    <div class="section-inner">
+      <h2 class="section-title">Packs</h2>
+      <p class="section-sub">Combos de contenido variado.</p>
+      <div class="card-grid" id="packsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FETICHES ============ -->
+  <section class="section section-alt" id="fetiches">
+    <div class="section-inner section-inner-narrow">
+      <h2 class="section-title">Fetiches</h2>
+      <p class="section-text" id="fetichesDescripcion"></p>
+      <a href="#" class="btn btn-outline" id="fetichesBtn">Consultar</a>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOLLAMADAS ============ -->
+  <section class="section section-discreet" id="videollamadas">
+    <div class="section-inner section-inner-narrow">
+      <h2 class="section-title">Videollamadas</h2>
+      <p class="section-text" id="videollamadasText"></p>
+      <a href="#" class="btn btn-outline" id="videollamadasBtn">Consultar</a>
+    </div>
+  </section>
+
+  <!-- ============ VIP ============ -->
+  <section class="section section-alt" id="vip">
+    <div class="section-inner section-inner-narrow">
+      <h2 class="section-title">VIP</h2>
+      <p class="section-text" id="vipText">Actualmente no disponible.</p>
+      <div id="vipContent"></div>
+    </div>
+  </section>
+
+  <!-- ============ REGLAS ============ -->
+  <section class="section" id="reglas">
+    <div class="section-inner section-inner-narrow">
+      <h2 class="section-title">Reglas</h2>
+      <ul class="plain-list plain-list-notes" id="reglasList"></ul>
+    </div>
+  </section>
+
+  <!-- ============ CONSULTAS ============ -->
+  <section class="section section-consultas" id="consultas">
+    <div class="section-inner section-inner-narrow">
+      <h2 class="section-title">Consultas</h2>
+      <p class="section-text">¿Tenés dudas o querés coordinar algo? Escribime directamente.</p>
+      <a href="#" class="btn btn-primary" id="consultasBtn">Escribir por Telegram</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-name" id="footerName">Nombre</p>
+    <div class="footer-links">
+      <a href="#" class="footer-telegram" id="footerTelegram">Telegram</a>
+      <a href="#" class="footer-telegram" id="footerOnlyfans">OnlyFans</a>
+    </div>
+    <nav class="footer-nav">
+      <a href="#info">Info</a>
+      <a href="#sexting">Sexting</a>
+      <a href="#novia">Novia Virtual</a>
+      <a href="#rates">Rates</a>
+      <a href="#personalizados">Personalizados</a>
+      <a href="#galeria">Galería</a>
+      <a href="#packs">Packs</a>
+      <a href="#fetiches">Fetiches</a>
+      <a href="#consultas">Consultas</a>
+    </nav>
+    <p class="footer-note">Los precios pueden actualizarse sin previo aviso.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
